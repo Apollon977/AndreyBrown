@@ -10,32 +10,24 @@ $mainAdaptive=$_POST['mainAdaptive'];
 $userName= $_POST['userName'];
 $userEmail= $_POST['userEmail'];
 $userTel= $_POST['userTel'];
-$userMessage= $_POST['userMessage'];
+//$userMessage= $_POST['userMessage'];
 
 
-if('nameOfForm' == 'formOne'){
-    $mail ->Body = "Имя: ".$userName. "<br>". "Почта: ". $userEmail."<br>"."Телефон: ". $userTel. "<br>"."Тип сайта: ".$mainType ."<br>"."Дизайн сайта: ".$mainDesign. "<br>"."Адаптивность: ".$mainAdaptive;
-}
-else if('nameOfForm' == 'formTwo'){
-    $mail ->Body = "Имя: ".$userName. "<br>". "Почта: ". $userEmail. "<br>". $userMessage;
-}
-else{
-    return false;
-}
+
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  						   // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'aybek02@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'AybekM4245767Aybek228'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = ''; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = ''; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('aybek02@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('aybek028@gmail.com'); 
-$mail->addAddress('podtinkina@gmail.com');    // Кому будет уходить письмо 
+$mail->setFrom(''); // от кого будет уходить письмо?
+$mail->addAddress(''); 
+$mail->addAddress('');    // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -45,7 +37,15 @@ $mail->addAddress('podtinkina@gmail.com');    // Кому будет уходи�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '';
+if('nameOfForm' == 'formOne'){
+    $mail ->Body = "Имя: ".$userName. "<br>". "Почта: ". $userEmail."<br>"."Телефон: ". $userTel. "<br>"."Тип сайта: ".$mainType ."<br>"."Дизайн сайта: ".$mainDesign. "<br>"."Адаптивность: ".$mainAdaptive;
+}
+else if('nameOfForm' == 'formTwo'){
+    $mail ->Body = "Имя: ".$userName. "<br>". "Почта: ". $userEmail. "<br>". $userMessage;
+}
+else{
+    return false;
+}
 $mail->AltBody = '';
 
 if(!$mail->send()) {
