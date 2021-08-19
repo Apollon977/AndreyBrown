@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-lg-3 col-7 ">
-                        <div class="name">Андрей Браун</div>
+                        <span class="name" ><a href="#name">Андрей Браун</a></span>
                     </div>
                     <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
@@ -59,20 +59,23 @@
     </header>
 
     <main>
-        <section class="main">
+        
+        <section class="main animate__animated animate__fadeInUp wow js" id="name">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-lg-6">
                         <div class="title__container">
                             <h1>Привет <br>Я Андрей Браун</h1>
                             <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
-                            <input type="button" value="Обо мне">
-                            <input type="button" value="Мои работы">
+                            
+                            <input type="button" id="btn1" value="Обо мне">
+                            <input type="button" id="btn2" value="Мои работы">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+   
     </main>
     <section>
         <div class="container h-720" >
@@ -111,14 +114,14 @@
             </div>
         </div>
         <div class="wict  container-fluid" id="Services">
-            <h2 class="h2 animate__animated animate__fadeInUp wow col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5 offset-lg-5">
+            <h2 class="h2 col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5 offset-lg-5">
                 ЧТО Я УМЕЮ</h2>
             <div
                 class="row animate__animated animate__fadeInUp wow my-2 justify-content-center align-items-end col-4 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 offset-xxl-5 offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5 offset-4">
                 <img class="line2" src="img/cherta1.png"></div>
             <div class="wict1 my-5 wow animate__animated">
                 <div class="row">
-                    <div class="col-xxl-3 wow animate__animated animate__fadeInLeft col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 offset-xxl-1">
+                    <div class="col-xxl-3 wow animate__delay-3s animate__animated animate__fadeInLeftBig col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 offset-xxl-1">
                         <div class="nout1 col-xxl-2 col-xl-1 col-lg-1 offset-xxl-5 offset-xl-5 offset-lg-5 ">
                             <img src="img/nout.png" class="nout" alt="///">
                         </div>
@@ -129,7 +132,7 @@
                             Lorem ipsum, dolor. Perferendis obcaecati eum, commodi ipsum cupiditate nisi reprehenderit esse dolorum tempora iure?
                         </div>
                     </div>
-                    <div class="col-xxl-2 wow animate__animated animate__fadeInUp col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="col-xxl-2 wow animate__delay-2s animate__animated animate__fadeInLeftBig col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="hz1 col-xxl-2 col-xl-1 col-lg-1 offset-xxl-5 offset-xl-5 offset-lg-5">
                             <img src="img/hz.png" class="hz" alt="///">
                     </div>
@@ -140,7 +143,7 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, inventore. 
                     </div>
                     </div>
-                    <div class="col-xxl-3 wow animate__animated animate__fadeInUp col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 ">
+                    <div class="col-xxl-3 wow animate__delay-1s animate__animated animate__fadeInLeftBig col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 ">
                         <div class="rocket1 col-xxl-2 col-xl-1 col-lg-1 col-md-12 offset-xxl-5 offset-xl-5 offset-lg-5">
                             <img src="img/rocket.png" class="rocket" alt="///">
                     </div>
@@ -151,7 +154,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dicta eos laborum ad vitae quasi? Provident et delectus debitis sint?
                     </div>
                     </div>
-                    <div class="col-xxl-2 wow animate__animated animate__fadeInRight col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="col-xxl-2 wow animate__animated animate__fadeInLeftBig col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="marketing1 col-xxl-2 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5 offset-lg-5">
                             <img src="img/marketing.png" class="marketing" alt="///">
                     </div>
@@ -203,13 +206,13 @@
                         odio modi nobis minus? Nobis, ea? Sapiente, consequatur
                         officia.</p>
                 </div>
-                <div class="project_button animate__animated animate__fadeInUp wow col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12"><input type="button"
-                        value="ПЕРЕЙТИ НА САЙТ">
+                <div class="project_button animate__animated animate__fadeInUp wow col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                    <input type="button" id="btn3" value="ПЕРЕЙТИ НА САЙТ">
                 </div>
             </div>
         </div>
         <div class="container animate__animated animate__fadeInUp wow" id="Price">
-            <form action="php/mail.php" method="POST">
+            <form action="php/mail.php" name="formActionOne" method="POST">
             <div class="money  col-md-12 my-5">
                 <h2 class="h2 py-3 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xxl-4 offset-xl-4 offset-lg-4">
                     Расчёт стоимости</h2>
@@ -284,7 +287,8 @@
                             <input type="text" name="userName" required placeholder="Имя">
                             <input type="email" name="userEmail" required placeholder="Email">
                             <input type="tel" id="inputTel" required name="userTel" placeholder="+7(___)___-____">
-                            <input type="submit" id="lustBtn" value="Отправить заявку">
+                            <input type="submit" name="submit1" id="lustBtn" value="Отправить заявку">
+                            <input type="hidden" name="nameOfForm" value="formOne">
                         </div>
                         </div>
                     </div>
@@ -396,22 +400,25 @@
                 </div>
                 </div>
             </div>
-            <form>
+            <form action="/php/mail.php" method="POST">
                 <div class="container animate__animated animate__fadeInUp wow">
                 <div class="sms my-3 col-2 col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 offset-xxl-4 offset-xl-4 offset-lg-3 ">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+                
                 <div class="row">
                 <div class=" col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-2 offset-lg-2">
-                    <input type="text" class="form-control" id="form1" placeholder="Имя" aria-label="First name">
+                    
+                    <input type="text" name="userName" class="form-control"  id="form1" required placeholder="Имя">
                   </div>
                   <div class=" col-xxl-4 col-xl-4 col-lg-4 col-md-12  col-sm-12 col-12 ">
-                    <input type="email" class="form-control offset-xxl-2 " id="form2" placeholder="Email" aria-label="First name" aria-describedby="emailHelp">
+                    <input type="email" name="userEmail" class="form-control offset-xxl-2"  required id="form2" placeholder="Email">
                   </div> 
                 </div>
                   <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-2 offset-lg-2 my-3">
-                    <textarea class="form-control" id="form3 exampleFormControlTextarea1" placeholder="Сообщение" rows="5"></textarea>
+                    <textarea type="text" class="form-control" name="userMessage" required id="form3 exampleFormControlTextarea1"  placeholder="Сообщение" rows="5"></textarea>
                   </div>
                 <div class="asdasd col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5">
-                    <input type="button" id="form4" value="Отправить">
+                    <input type="submit" name="submit2" id="form4" value="Отправить">
+                    <input type="hidden" name="nameOfForm" value="formTwo">
                 </div>
                 </div>  
             </form>
