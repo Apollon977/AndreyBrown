@@ -10,7 +10,7 @@ $mainAdaptive=$_POST['mainAdaptive'];
 $userName= $_POST['userName'];
 $userEmail= $_POST['userEmail'];
 $userTel= $_POST['userTel'];
-//$userMessage= $_POST['userMessage'];
+$userMessage= $_POST['userMessage'];
 
 
 
