@@ -1,0 +1,110 @@
+@font-face {
+	font-family: 'HelveticaRegular';
+	src: url('../fonts/HelveticaRegular.eot');
+	src: local('☺'), url('../fonts/HelveticaRegular.woff') format('woff'), url('../fonts/HelveticaRegular.ttf') format('truetype'), url('../fonts/HelveticaRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body{
+    font-family: 'HelveticaRegular', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+section{
+    padding-top:150px;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: block !important;
+}
+
+.pages-container{
+    width: 100%;
+    margin: 0 auto;
+    height: 1020px;
+}
+
+.bg-pages-container{
+    height: 100%;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.bg-pages-container > h1{
+    text-align: center;
+    color: #001029;
+}
+.pages-container > .bg-flex{
+    display: block;
+    margin: 0 auto;
+}
+
+.pages-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-page{
+    display: block;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin:0 auto;
+    margin-bottom: 40px;
+margin-top: 40px;
+}
+
+.main-services{
+    display: block;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin:0 auto;
+    margin-bottom: 40px;
+margin-top: 40px;
+}
+
+.main-contacts{
+    display: block;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin:0 auto;
+    margin-bottom: 40px;
+margin-top: 40px;
+}
+
+.main-faq{
+    display: block;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin:0 auto;
+    margin-bottom: 40px;
+margin-top: 40px;
+}
+
+.main-prortfolio{
+    display: block;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
