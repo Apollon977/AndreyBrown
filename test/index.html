@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт</title>
+     Yandex.Metrika counter 
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(84492514, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/84492514" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter 
 </head>
 
 <body>
@@ -185,12 +200,12 @@
                 </div>
                 <div class="client animate__animated animate__fadeInUp wow">
                     <div class="client1">
-                    <div class="c1 py-1 col-1 col-xxl-1 col-xl-1 col-lg-11 col-md-11 col-sm-5 col-5">CLIENT:</div>
-                    <div class="cc1 py-1 col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-10 col-sm-8 col-8">Какая-то компания</div>
+                    <div class="c1 py-1  col-xxl-1 col-xl-1 col-lg-11 col-md-1 col-sm-5 col-12">CLIENT:</div>
+                    <div class="cc1 py-1  col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-8 col-12">Какая-то компания</div>
                     </div>
                     <div class="client2 ">
-                    <div class="website py-1 col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3">WEBSITE:</div>
-                    <div class="site py-1 col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6"><a
+                    <div class="website py-1  col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-3 col-12">WEBSITE:</div>
+                    <div class="site py-1  col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-12"><a
                             href="http://somedomain.com">http://somedomain.com</a></div>
                     </div>
                 </div>
@@ -212,16 +227,16 @@
             </div>
         </div>
         <div class="container animate__animated animate__fadeInUp wow" id="Price">
-            <form action="php/mail.php" name="formActionOne" method="POST">
+            <form action="php/mail.php" id="formOne" method="POST">
             <div class="money  col-md-12 my-5">
                 <h2 class="h2 py-3 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xxl-4 offset-xl-4 offset-lg-4">
                     Расчёт стоимости</h2>
-                <p class="p tip  col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+                <p class="p tip  col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
                     ТИП САЙТА</p>
                 <div class="col-10 col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
                     
-                    <select onchange="calc()" name="mainType" id="listfirst" onchange="calc()">
-                        <option selcted hidden value="0">Выберите пункт...</option>
+                    <select name="mainType" id="listfirst" onchange="calc()">
+                        <option selected hidden value="0">Выберите пункт...</option>
                         <option value="3000" style= "font-size: 20pt">Сайт-визитка</option>
                         <option value="5000" style= "font-size: 20pt">Лендинг</option>
                         <option value="5000" style= "font-size: 20pt">Блог</option>
@@ -233,7 +248,7 @@
                     ДИЗАЙН</p>
                 <div class="col-10 animate__animated animate__fadeInUp wow col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
                     <select  onchange="calc()" name="mainDesign" id="listtwo">
-                        <option selcted hidden value="0">Выберите пункт...</option>
+                        <option selected hidden value="0">Выберите пункт...</option>
                         <option value="2000" style= "font-size: 20pt">Свой дизайн</option>
                         <option value="2000" style= "font-size: 20pt">Стекломорфизм</option>
                         <option value="3000" style= "font-size: 20pt">Неоморфизм</option>
@@ -246,7 +261,7 @@
                     АДАПТИВНОСТЬ</p>
                 <div class="col-10 animate__animated animate__fadeInUp wow col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
                     <select  onchange="calc()" name="mainAdaptive" id="listthree">
-                        <option selcted hidden value="0" style= "font-size: 20pt">Выберите пункт...</option>
+                        <option selected hidden value="0" style= "font-size: 20pt">Выберите пункт...</option>
                         <option value="3500" style= "font-size: 20pt">Есть</option>
                         <option value="0" style= "font-size: 20pt">Нет</option>
                     </select>
@@ -260,40 +275,35 @@
                     <p class="p sroki col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
                         Сроки</p>
                     <span class="p nol  col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 offset-xxl-8 offset-xl-8 offset-lg-8 offset-md-8 offset-sm-8 offset-8"
-                    id="deadline">
+                    id="terms">
                         0</span>
                     
                 </div>
                 <div class="cenanol animate__animated animate__fadeInUp wow">
                     <p class="p cena col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1 ">
                         Стоимость</p>
-                    <div class="p nol2 col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 offset-xxl-7 offset-xl-7 offset-lg-7 offset-md-7 offset-sm-7 offset-7"
+                    <div class="p nol2 col-2 col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-1 offset-xxl-7 offset-xl-7 offset-lg-7 offset-md-6 offset-sm-7 offset-6"
                     id="result">0<span> ₽</span></div>
                 </div>
-                <div class="open-popup animate__animated animate__fadeInUp wow my-3 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5 offset-lg-5 "
+                <div class="open-popup animate__animated animate__fadeInUp wow my-3 col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5 offset-lg-5"
                 id="application"><input type="button" class="btnpopup"
                     value="ОСТАВИТЬ ЗАЯВКУ"></div>
                     <div class="popup-bg">
                         <div class="popup col-12">
                             <a href="" class="close-popup"></a>
                             <h3 class="h3 formApplication ">ФОРМА ЗАЯВКИ</h3>
-                            <!--<div class="finalCost">ВЕРНО ЛИ ВЫБРАНЫ НАСТРОЙКИ?
-                            <div class="information">ТИП САЙТА <span id="siteType">1</span></div>
-                            <div class="secondinformation">ДИЗАЙН <span id="siteDesign">1</span></div>
-                            <div class="thirdinformation">АДАПТИВНОСТЬ <span id="siteAdaptive">1</span></div>
-                            </div>-->
                             <div class="popupName">
                             <input type="text" name="userName" required placeholder="Имя">
                             <input type="email" name="userEmail" required placeholder="Email">
+                            <input type="hidden" name="nameOfForm" value="formOne">
                             <input type="tel" id="inputTel" required name="userTel" placeholder="+7(___)___-____">
                             <input type="submit" name="submit1" id="lustBtn" value="Отправить заявку">
-                            <input type="hidden" name="nameOfForm" value="formOne">
                         </div>
                         </div>
                     </div>
-                </form>
-            </div>
-        
+                </div>
+            </form>
+            
         </div>
         <div class="static container-fluid">
                 <h2
@@ -356,7 +366,7 @@
         </div>
         <div class="container" id="Reviews">
         <div class="otzivi animate__animated animate__fadeInUp wow">
-            <h2 class="h2 py-5  col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 offset-xxl-5 offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5 offset-5">ОТЗЫВЫ</h2>
+            <h2 class="h2 py-5  col-2 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12 offset-xxl-5 offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5">ОТЗЫВЫ</h2>
             <div class="row justify-content-center align-items-end col-4 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 offset-xxl-5 offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5 offset-4">
                 <img class="line5" src="img/cherta1.png"></div>
             <div class="lico1 py-5 col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -399,12 +409,12 @@
                 </div>
                 </div>
             </div>
-            <form action="/php/mail.php" method="POST">
+            <form action="php/mail.php" id="formTwo" method="POST">
                 <div class="container animate__animated animate__fadeInUp wow">
                 <div class="sms my-3 col-2 col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 offset-xxl-4 offset-xl-4 offset-lg-3 ">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
                 
                 <div class="row">
-                <div class=" col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-2 offset-lg-2">
+                <div class=" my-1 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-2 offset-lg-2">
                     
                     <input type="text" name="userName" class="form-control"  id="form1" required placeholder="Имя">
                   </div>
@@ -414,10 +424,10 @@
                 </div>
                   <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-2 offset-lg-2 my-3">
                     <textarea type="text" class="form-control" name="userMessage" required id="form3 exampleFormControlTextarea1"  placeholder="Сообщение" rows="5"></textarea>
+                    <input type="hidden" name="nameOfFormTwo" value="formTwo">
                   </div>
                 <div class="asdasd col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 offset-xxl-5 offset-xl-5">
                     <input type="submit" name="submit2" id="form4" value="Отправить">
-                    <input type="hidden" name="nameOfForm" value="formTwo">
                 </div>
                 </div>  
             </form>
