@@ -53,6 +53,12 @@ nav{
     animation: comming  2s forwards ease;
 }
 
+.name > a{
+   text-decoration: none;
+   list-style-type: none;
+   color: #fff;
+}
+
 @keyframes comming{
     from {
         opacity: 0;
