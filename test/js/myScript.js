@@ -36,11 +36,11 @@ $('a[href^="#"]').click(function(){
 
 function calc() {
     
-    const listfirst = document.querySelector("#listfirst");
-    const listtwo = document.querySelector("#listtwo");
-    const listthree = document.querySelector("#listthree");
-    const result = document.querySelector("#result");
-    let LeaveАRequest = document.querySelector("#application");
+    let listfirst = document.querySelector("#listfirst");
+    let listtwo = document.querySelector("#listtwo");
+    let listthree = document.querySelector("#listthree");
+    let result = document.querySelector("#result");
+    let terms = document.querySelector("#terms");
 
     let price = 0;
     price += parseInt(listfirst.options[listfirst.selectedIndex].value);
@@ -51,9 +51,26 @@ function calc() {
         return false;
     } else{
         result.innerHTML = `${price} ₽`
+    };
+
+
+    if (price < 3000){
+        terms.innerHTML = `0 дней`;
+    } else if(price <= 8000){
+        terms.innerHTML = `2-5 дней`;
+    } else if (result <= 12000){
+        terms.innerHTML = `5-8 дней`;
+    } else if (result <= 15000){
+        terms.innerHTML = `8-10 дней`;
+    } else if (result <= 20000){
+        terms.innerHTML = `10-15 дней`;
+    } else if (result <= 25000){
+        terms.innerHTML = `15-20 дней`;
+    } else if (result <= 80000){
+        terms.innerHTML = `30 дней`;
     }
     
-}
+};
 
 $('.open-popup').click(function(e){
     e.preventDefault();
