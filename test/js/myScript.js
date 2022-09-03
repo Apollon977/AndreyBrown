@@ -4,10 +4,6 @@ $(document).ready(function(){
     $("#inputTel").mask("+7(999) 999-9999");
     $("html,body").animate({ scrollTop: $(".dropdown")[0].offsetTop }, 0);
 });
-/*let a = prompt("Какаой тип сайта Вы хотите?");
-let b =prompt("Какой дизайн предпочитаете?");
-let c = prompt("Будет ли адаптивность на мобильные устройства?");
-console.log(a, b, c);*/
 
 $(window).scroll(() => {
    let scrollDistance = $(window).scrollTop();
@@ -100,17 +96,31 @@ $(".name").click(function(){
 });
 
 
-// $('form').submit(function(event){
-//     event.preventDefault();
+   $('form').submit(function(e){
+       e.preventDefault();
 
-//     $.ajax({
-//         type: "POST",
-//         url: "php/mail.php",
-//         data: $(this).serialize()
-//     }).done(function(){
-//         $(this).find("input").val("");
-//         alert("Succesfull");
-//         $('form').trigger("reset");
-//     });
-//     return false;
+      $.ajax({
+         type: "POST",
+          url: "php/mail.php",
+          data: $(this).serialize()
+             }).done(function(){
+          $(this).find("input").val("");
+              alert("Успешно отправлено!");
+      });
+      return false;
+ });
+
+//  $('#formTwo').submit(function(e){
+//     e.preventDefault();
+
+//    $.ajax({
+//       type: "POST",
+//        url: "php/mailTwo.php",
+//        data: $(this).serialize()
+//           }).done(function(){
+//        $(this).find("input").val("");
+//            alert("Успешно отправлено!");
+//    });
+//    return false;
 // });
+
