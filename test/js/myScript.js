@@ -62,7 +62,7 @@ function calc() {
         terms.textContent = `10-15 дней`;
     } else if (result <= 25000){
         terms.textContent = `15-20 дней`;
-    } else (result <= 80000){
+    } else{
         terms.textContent = `30 дней`;
     }
     
