@@ -51,19 +51,19 @@ function calc() {
 
 
     if (price < 3000){
-        terms.innerHTML = `0 дней`;
+        terms.textContent = `0 дней`;
     } else if(price <= 8000){
-        terms.innerHTML = `2-5 дней`;
+        terms.textContent = `2-5 дней`;
     } else if (result <= 12000){
-        terms.innerHTML = `5-8 дней`;
+        terms.textContent = `5-8 дней`;
     } else if (result <= 15000){
-        terms.innerHTML = `8-10 дней`;
+        terms.textContent = `8-10 дней`;
     } else if (result <= 20000){
-        terms.innerHTML = `10-15 дней`;
+        terms.textContent = `10-15 дней`;
     } else if (result <= 25000){
-        terms.innerHTML = `15-20 дней`;
+        terms.textContent = `15-20 дней`;
     } else (result <= 80000){
-        terms.innerHTML = `30 дней`;
+        terms.textContent = `30 дней`;
     }
     
 };
